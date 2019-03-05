@@ -1,0 +1,57 @@
+body {
+  padding-top: 5rem;
+}
+
+.navbar__brand {
+  margin-left: 1rem;
+}
+
+.sidebar__tgl {
+  margin-right: 1rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+}
+
+.carousel {
+  margin-bottom: 2rem;
+}
+
+.heading {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+.fab {
+  margin-right: .25rem;
+}
+
+.facebook:hover {
+  color:#8b9dc3;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media only screen and (min-width: 600px) {
+  .sidebar__tgl {
+    margin-right: 0;
+  }
+
+  .footer__link {
+    margin-left: 2rem;
+  }
+
+  .footer__container {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

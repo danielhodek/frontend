@@ -1,0 +1,40 @@
+.card {
+  margin-bottom: 2rem;
+  background: $bg-light;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+}
+
+.card__video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.card__video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__body {
+  padding: $font-size-md;
+}
+
+.card__heading {
+  margin-bottom: 1rem;
+  font-size: $font-size-lg;
+  font-weight: 400;
+}
+
+.card__text {
+  margin-bottom: 2rem;
+  font-size: $font-size-sm;
+}

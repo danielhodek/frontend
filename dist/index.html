@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Frontend Basics</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="styles/frontend-basics.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Navbar-->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__main"><i class="icon fas fa-code"></i><a class="navbar__brand" href="#">Title</a></div>
+        <div class="navbar__collapse" id="navbar-1">
+          <div class="navbar__nav"><a class="navbar__link" href="#">Home</a><a class="navbar__link" href="#">Link</a>
+            <div class="dropdown"><button class="navbar__link dropdown__tgl" data-target="dropdown-1">Dropdown <span
+                  class="caret caret-down"></span></button>
+              <div class="dropdown__collapse" id="dropdown-1">
+                <div class="dropdown__content"><a class="dropdown__link" href="#">Action</a><a class="dropdown__link"
+                    href="#">Another Action</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar__mobile"></div>
+        </div>
+        <div class="navbar__controls"><button class="tgl sidebar__tgl" data-target="sidebar-1" type="button"><i
+              class="icon fas fa-arrow-left"></i></button><button class="tgl navbar__tgl" data-target="navbar-1"
+            type="button"><i class="icon fas fa-bars"> </i></button></div>
+      </div>
+    </nav><!-- Sidebar-->
+    <div class="bg-shade"></div>
+    <nav class="sidebar-right" id="sidebar-1">
+      <div class="sidebar__content">
+        <div class="sidebar__header"><button class="tgl sidebar__tgl" data-target="sidebar-1"><i
+              class="icon fas fa-arrow-right"></i></button></div><a class="sidebar__link" href="#">Link</a><a
+          class="sidebar__link" href="#">Another Link</a><a class="sidebar__link" href="#">Something Else</a>
+      </div>
+    </nav><!-- Hero-->
+    <div class="hero">
+      <div class="container">
+        <h2 class="hero__heading">Hello</h2>
+        <p class="hero__text">Put something interesting here.</p>
+        <form class="row">
+          <div class="form__group col-8"><label for="input">Input</label><input class="form__input" id="input"
+              type="text" placeholder="Placeholder"></div>
+        </form>
+      </div>
+    </div><!-- Carousel-->
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="carousel">
+            <div class="carousel__slide">
+              <h2 class="carousel__heading">Slide 1</h2>
+              <p class="carousel__text">Slide 1 text. </p>
+            </div>
+            <div class="carousel__slide">
+              <h2 class="carousel__heading">Slide 2</h2>
+              <p class="carousel__text">Slide 2 text. </p>
+            </div>
+            <div class="carousel__slide">
+              <h2 class="carousel__heading">Slide 3</h2>
+              <p class="carousel__text">Slide 3 text. </p>
+            </div><button class="carousel__btn-prev"><i
+                class="carousel__btn-icon fas fa-arrow-left"></i></button><button class="carousel__btn-next"><i
+                class="carousel__btn-icon fas fa-arrow-right"> </i></button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="card__video-wrapper"><iframe class="card__video" width="560" height="315"
+                src="https://www.youtube.com/embed/HpYIG0S6GJU" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></div>
+            <div class="card__body">
+              <h3 class="card__heading">Card</h3>
+              <p class="card__text">This is a card.</p>
+              <div class="btn-row"><button class="btn">Button</button><button class="btn">Another Button</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="heading text-center">Album</h1>
+      <div class="row album">
+        <div class="col-4">
+          <div class="card"><img class="card__image" src="images/image-1.jpg"></div>
+        </div>
+        <div class="col-4">
+          <div class="card"><img class="card__image" src="images/image-2.jpg"></div>
+        </div>
+        <div class="col-4">
+          <div class="card"><img class="card__image" src="images/image-3.jpg"></div>
+        </div>
+      </div>
+    </div><!-- Footer-->
+    <footer class="footer">
+      <div class="container footer__container"><a class="footer__link facebook" href="#"><i class="fab fa-facebook"></i>
+          Facebook </a><a class="footer__link twitter" href="#"><i class="fab fa-twitter"></i> Twitter </a><a
+          class="footer__link" href="#"><i class="fab fa-github"></i> GitHub</a></div>
+    </footer>
+    <script src="scripts/frontend-basics.bundle.js"></script>
+  </body>
+
+</html>

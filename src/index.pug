@@ -1,0 +1,96 @@
+doctype html
+html(lang="en")
+  head
+    meta(http-equiv="X-UA-Compatible" content="IE=Edge")
+    title Frontend Basics
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous")
+    link(href="styles/frontend-basics.css" rel="stylesheet")
+    link(href="styles/style.css" rel="stylesheet")
+  body
+    // Navbar
+    nav.navbar
+      div.navbar__container
+        div.navbar__main
+          i.icon.fas.fa-code
+          a.navbar__brand(href="#") Title
+        div#navbar-1.navbar__collapse
+          div.navbar__nav
+            a.navbar__link(href="#") Home
+            a.navbar__link(href="#") Link
+            div.dropdown
+              button.navbar__link.dropdown__tgl(data-target="dropdown-1") Dropdown #[span.caret.caret-down]
+              div#dropdown-1.dropdown__collapse
+                div.dropdown__content
+                  a.dropdown__link(href="#") Action
+                  a.dropdown__link(href="#") Another Action
+          div.navbar__mobile
+        div.navbar__controls
+          button.tgl.sidebar__tgl(data-target="sidebar-1" type="button")
+            i.icon.fas.fa-arrow-left
+          button.tgl.navbar__tgl(data-target="navbar-1" type="button")
+            i.icon.fas.fa-bars  
+    // Sidebar
+    div.bg-shade
+    nav#sidebar-1.sidebar-right
+      div.sidebar__content
+        div.sidebar__header
+          button.tgl.sidebar__tgl(data-target="sidebar-1")
+            i.icon.fas.fa-arrow-right
+        a.sidebar__link(href="#") Link
+        a.sidebar__link(href="#") Another Link
+        a.sidebar__link(href="#") Something Else
+    // Hero
+    div.hero
+      div.container
+        h2.hero__heading Hello
+        p.hero__text Put something interesting here.
+        form.row
+          div.form__group.col-8
+            label(for="input") Input
+            input#input.form__input(type="text" placeholder="Placeholder")
+    // Carousel
+    div.container
+      div.row
+        div.col-6
+          div.carousel
+            div.carousel__slide
+              h2.carousel__heading Slide 1
+              p.carousel__text Slide 1 text. 
+            div.carousel__slide
+              h2.carousel__heading Slide 2
+              p.carousel__text Slide 2 text. 
+            div.carousel__slide
+              h2.carousel__heading Slide 3
+              p.carousel__text Slide 3 text. 
+            button.carousel__btn-prev
+              i.carousel__btn-icon.fas.fa-arrow-left
+            button.carousel__btn-next
+              i.carousel__btn-icon.fas.fa-arrow-right 
+        div.col-6
+          div.card
+            div.card__video-wrapper
+              iframe.card__video(width="560" height="315" src="https://www.youtube.com/embed/HpYIG0S6GJU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            div.card__body
+              h3.card__heading Card
+              p.card__text This is a card.
+              div.btn-row
+                button.btn Button
+                button.btn Another Button
+      h1.heading.text-center Album
+      div.row.album
+        div.col-4
+          div.card
+            img.card__image(src="images/image-1.jpg")
+        div.col-4
+          div.card
+            img.card__image(src="images/image-2.jpg")
+        div.col-4
+          div.card
+            img.card__image(src="images/image-3.jpg")
+    // Footer
+    footer.footer
+      div.container.footer__container
+        a.footer__link.facebook(href="#") #[i.fab.fa-facebook] Facebook 
+        a.footer__link.twitter(href="#") #[i.fab.fa-twitter] Twitter 
+        a.footer__link(href="#") #[i.fab.fa-github] GitHub
+    script(src="scripts/frontend-basics.bundle.js")

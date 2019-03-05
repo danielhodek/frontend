@@ -1,0 +1,145 @@
+.btn-row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.btn {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: .75rem 1rem;
+  color: $color-dark;
+  background: $btn-light-muted;
+  border-radius: 5px;
+  font-size: $font-size-sm;
+  
+  &:hover {
+    background: $btn-light;
+  }
+}
+
+.icon {
+  display: inline-block;
+  font-size: $font-size-lg;
+  color: $color-light;
+}
+
+.tgl .icon {
+  color: $color-light-muted;
+
+  &:hover {
+    color: $color-light;
+  }
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  transition: border $transition-speed;
+}
+
+.caret-up {
+  border-bottom: 0.25em solid $color-light-muted;
+  border-left: 0.25em solid transparent;
+  border-right: 0.25em solid transparent;
+  border-top-width: 0;
+}
+
+.caret-down {
+  border-top: 0.25em solid $color-light-muted;
+  border-left: 0.25em solid transparent;
+  border-right: 0.25em solid transparent;
+  border-bottom-width: 0;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__collapse {
+  position: relative;
+  max-height: 0;
+  z-index: 4;
+  transition: max-height $transition-speed;
+}
+
+.dropdown__content {
+  padding: 0;
+  background: $bg-dark;
+  border-radius: 5px;
+}
+
+.dropdown__link {
+  display: block;
+  padding: .5rem 1rem;
+  color: $color-light-muted;
+  
+  font-size: $font-size-md;
+  white-space: nowrap;
+
+  &:hover {
+    color: $color-light;
+  }
+}
+
+label {
+  display: inline-block;
+  padding: 1rem 0;
+  padding-right: 1rem;
+  color: $color-dark;
+  font-size: $font-size-md; 
+}
+
+.form__group {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.form__input {
+  flex-basis: 100%;
+  width: 100%;
+  padding: 1rem;
+  background: $bg-light;
+  border: 2px solid $bg-gray;
+  border-radius: 5px;
+  font-size: $font-size-md;
+
+  &:focus {
+    border: 2px solid #1da1f2;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .dropdown__collapse {
+    position: absolute;
+    top: 150%;
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+    z-index: 4;
+    transition: max-height $transition-speed;
+  }  
+
+  .dropdown__content {
+    padding: .5rem 0;
+    background: $bg-light;
+    border: 1px solid $bg-gray;
+  }
+
+  .dropdown__link {
+    color: $color-dark-muted;
+
+    &:hover {
+      color: $color-dark;
+      background: $bg-gray;
+    }
+  }
+
+  .form__input {
+    flex-basis: auto;
+    flex-grow: 1;
+    width: 200px;
+  }
+}
