@@ -4,7 +4,7 @@ module.exports = {
   entry: ['@babel/polyfill', './src/scripts/main.js'],
   output: {
     path: path.resolve(__dirname, 'dist/scripts'),
-    filename: 'frontend-basics.bundle.js'
+    filename: 'front-end-basics.bundle.js'
   },
   module: {
     rules: [

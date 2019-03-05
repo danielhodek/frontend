@@ -1,10 +1,10 @@
 {
-  "name": "frontend-basics",
+  "name": "front-end-basics",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "html": "pug --watch src --out dist",
-    "css": "sass --watch src/styles/main.scss dist/styles/frontend-basics.css",
+    "css": "sass --watch src/styles/main.scss dist/styles/front-end-basics.css",
     "webpack": "webpack --watch",
     "build": "concurrently npm:html npm:css npm:webpack"
   },
