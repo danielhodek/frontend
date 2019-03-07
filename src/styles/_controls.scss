@@ -7,13 +7,13 @@
   margin-left: 5px;
   margin-right: 5px;
   padding: .75rem 1rem;
-  color: $color-dark;
-  background: $btn-light-muted;
+  color: $color-light;
+  background: $btn-muted;
   border-radius: 5px;
   font-size: $font-size-sm;
   
   &:hover {
-    background: $btn-light;
+    background: $btn;
   }
 }
 

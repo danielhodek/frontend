@@ -7,6 +7,7 @@ html(lang="en")
     link(href="styles/front-end-basics.css" rel="stylesheet")
     link(href="styles/style.css" rel="stylesheet")
   body
+    div.spacer
     // Navbar
     nav.navbar
       div.navbar__container
@@ -42,8 +43,8 @@ html(lang="en")
     // Hero
     div.hero
       div.container
-        h2.hero__heading Hello
-        p.hero__text Put something interesting here.
+        h2 Hello
+        p.lead Put something interesting here.
         form.row
           div.form__group.col-8
             label(for="input") Input
@@ -54,14 +55,14 @@ html(lang="en")
         div.col-6
           div.carousel
             div.carousel__slide
-              h2.carousel__heading Slide 1
-              p.carousel__text Slide 1 text. 
+              h2 Slide 1
+              p.lead Slide 1 text. 
             div.carousel__slide
-              h2.carousel__heading Slide 2
-              p.carousel__text Slide 2 text. 
+              h2 Slide 2
+              p.lead Slide 2 text. 
             div.carousel__slide
-              h2.carousel__heading Slide 3
-              p.carousel__text Slide 3 text. 
+              h2 Slide 3
+              p.lead Slide 3 text. 
             button.carousel__btn-prev
               i.carousel__btn-icon.fas.fa-arrow-left
             button.carousel__btn-next
@@ -71,12 +72,12 @@ html(lang="en")
             div.card__video-wrapper
               iframe.card__video(width="560" height="315" src="https://www.youtube.com/embed/HpYIG0S6GJU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
             div.card__body
-              h3.card__heading Card
-              p.card__text This is a card.
+              h4 Card
+              p This is a card.
               div.btn-row
                 button.btn Button
                 button.btn Another Button
-      h1.heading.text-center Album
+      h2.text-center Album
       div.row.album
         div.col-4
           div.card

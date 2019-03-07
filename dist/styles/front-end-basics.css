@@ -28,7 +28,6 @@ html {
 }
 
 body {
-  padding-top: 8rem;
   color: #555;
   background: #eee;
   font-family: "Helvetica", sans-serif;
@@ -45,6 +44,50 @@ input, button {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.lead {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+h5 {
+  font-size: 2.4rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.spacer {
+  height: 5.4rem;
 }
 
 .container {
@@ -73,8 +116,28 @@ a {
   justify-content: space-between;
 }
 
+.jc-around {
+  justify-content: space-around;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
 .jc-end {
   justify-content: flex-end;
+}
+
+.ai-start {
+  align-items: flex-start;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-end {
+  align-items: flex-end;
 }
 
 .row {
@@ -102,16 +165,6 @@ a {
 .hero {
   padding: 8rem 3rem;
   background: #fff;
-}
-
-.hero__heading {
-  margin-bottom: 2rem;
-  font-size: 4.6rem;
-}
-
-.hero__text {
-  margin-bottom: 3rem;
-  font-size: 2.4rem;
 }
 
 .footer {
@@ -202,18 +255,18 @@ a {
   margin-left: 5px;
   margin-right: 5px;
   padding: 0.75rem 1rem;
-  color: #555;
-  background: #efefef;
+  color: #fff;
+  background: #333;
   border-radius: 5px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .btn:hover {
-  background: #dfdfdf;
+  background: #666;
 }
 
 .icon {
   display: inline-block;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -267,7 +320,7 @@ a {
   display: block;
   padding: 0.5rem 1rem;
   color: #ddd;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   white-space: nowrap;
 }
 .dropdown__link:hover {
@@ -279,7 +332,7 @@ label {
   padding: 1rem 0;
   padding-right: 1rem;
   color: #555;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .form__group {
@@ -295,7 +348,7 @@ label {
   background: #fff;
   border: 2px solid #eee;
   border-radius: 5px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .form__input:focus {
   border: 2px solid #1da1f2;
@@ -353,7 +406,7 @@ label {
 
 .navbar__brand {
   margin-right: auto;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -378,7 +431,7 @@ label {
   margin-right: 1rem;
   padding: 0.5rem 0;
   color: #ddd;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   cursor: pointer;
 }
 .navbar__link:hover {
@@ -474,7 +527,7 @@ label {
   display: block;
   padding: 0.5rem 0;
   color: #ddd;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 .sidebar__link:hover {
   color: #fff;
@@ -539,16 +592,7 @@ label {
 
 .carousel__btn-icon {
   color: inherit;
-  font-size: 4.6rem;
-}
-
-.carousel__heading {
-  margin-bottom: 2rem;
-  font-size: 4.6rem;
-}
-
-.carousel__text {
-  font-size: 2.4rem;
+  font-size: 3.6rem;
 }
 
 .card {
@@ -578,18 +622,7 @@ label {
 }
 
 .card__body {
-  padding: 1.8rem;
-}
-
-.card__heading {
-  margin-bottom: 1rem;
-  font-size: 2.4rem;
-  font-weight: 400;
-}
-
-.card__text {
-  margin-bottom: 2rem;
-  font-size: 1.6rem;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=front-end-basics.css.map */

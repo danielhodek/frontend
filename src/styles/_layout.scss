@@ -1,3 +1,47 @@
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.lead {
+  font-size: 2.0rem;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+h5 {
+  font-size: 2.4rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.spacer {
+  height: 5.4rem;
+}
+
 .container {
   width: 100%;
   max-width: 1000px;
@@ -24,8 +68,28 @@
   justify-content: space-between;
 }
 
+.jc-around {
+  justify-content: space-around;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
 .jc-end {
   justify-content: flex-end;
+}
+
+.ai-start {
+  align-items: flex-start
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-end {
+  align-items: flex-end
 }
 
 .row {
@@ -55,16 +119,6 @@
   background: $bg-light;
 }
 
-.hero__heading {
-  margin-bottom: 2rem;
-  font-size: $font-size-xl;
-}
-
-.hero__text {
-  margin-bottom: 3rem;
-  font-size: $font-size-lg;
-}
-
 .footer {
   padding: 2rem 0;
   background: $bg-dark;
@@ -72,7 +126,7 @@
 
 .footer__link {
   padding: .5rem 0;
-  font-size: $font-size-sm;
+  font-size: $font-size-md;
   color: $color-light-muted;
 
   &:hover {
