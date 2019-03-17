@@ -3,9 +3,12 @@
   margin-right: -5px;
 }
 
-.btn {
+.btn-row .btn {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.btn {
   padding: .75rem 1rem;
   color: $color-light;
   background: $btn-muted;
