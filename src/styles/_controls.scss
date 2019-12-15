@@ -1,6 +1,19 @@
 .btn-row {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: -5px;
   margin-right: -5px;
+}
+
+.btn-row .btn {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.btn-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .btn-row .btn {
@@ -58,6 +71,7 @@
 
 .dropdown {
   position: relative;
+  text-align: right;
 }
 
 .dropdown__collapse {
@@ -115,6 +129,10 @@ label {
 }
 
 @media only screen and (min-width: 600px) {
+  .dropdown {
+    text-align: left;
+  }
+
   .dropdown__collapse {
     position: absolute;
     top: 150%;
